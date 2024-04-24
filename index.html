@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                    <article class="card">
+                        <div class="card-header">
+                            <h2 class="card-header-title">Ping Pong Score keeper</h2>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="pingpong.png" alt="Ping pong table" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                                </h1>
+                                <p class="subtitle">Use the buttons below to keep score</p>
+                                <div class="select is-rounded">
+                                    <select name="playTo" id="playTo">
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="8">8</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button type="button" id="p1Button" class="is-primary button card-footer-item is-large">P1
+                                Score</button>
+                            <button type="button" id="p2Button" class="is-info button card-footer-item is-large">P2
+                                Score</button>
+                            <button type="button" id="resetButton"
+                                class="is-danger button card-footer-item is-large">Reset</button>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <script src="app.js"></script>
+    </main>
+</body>
+
+</html>
